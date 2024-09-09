@@ -13,6 +13,11 @@
     src: url('/fonts/Oswald.ttf');
 }
 
+@font-face {
+    font-family: inter;
+    src: url('/fonts/Inter.ttf');
+}
+
 
 html {
     background-color: var(--bg);
@@ -44,6 +49,7 @@ a {
     color: white;
 }
 
+
 .navigation-list {
     display: flex;
     flex-direction: row;
@@ -69,3 +75,60 @@ li {
     flex-direction: row;
     gap: 30px;
 }
+
+/*BG elements*/
+
+.bg-elements img:nth-child(1) {
+    top: 60px;
+    left: 5px;
+}
+
+.bg-elements img:nth-child(2) {
+    top: 300px;
+    right: 5px;
+}
+
+.bg-elements img:nth-child(3) {
+    top: 600px;
+    left: 500px;
+    rotate: 45deg;
+}
+
+.bg-elements img {
+    position: absolute;
+    z-index: -1;
+    opacity: 30%;
+    filter: blur(2px);
+}
+
+/*hero-logo*/
+
+.hero-logo {
+    rotate: -5deg;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.first-paragraph-hero {
+    font-family: inter;
+    font-size: 40px;
+    margin: 225px 425px -30px 0px;
+    rotate: -5deg;
+}
+
+.second-paragraph-hero {
+    font-family: reef;
+    font-size: 150px;
+}
+
+.third-paragraph-hero {
+    font-family: inter;
+    font-size: 30px;
+    margin-left: 260px;
+    margin-top: -20px;
+    rotate: -5deg;
+}
+
